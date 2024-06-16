@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- This sets the character encoding of the document to UTF-8, which includes most characters from all the world's writing systems. -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This makes sure the website looks good on all devices, by setting the width of the viewport to the width of the device. -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- This sets the favicon (the small icon that appears in the browser tab) to a 32x32 pixels PNG image. -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <!-- This links to the Google Fonts library to use the 'Outfit' font family in the document. -->
+
+  <title>Frontend Mentor | QR code component</title>
+  <!-- This sets the title of the webpage, which appears in the browser tab. -->
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: hsl(212, 45%, 89%);
+      font-family: 'Outfit', sans-serif;
+    }
+    /* The 'body' selector styles the entire page. 
+       - 'display: flex;' makes the body a flex container.
+       - 'justify-content: center;' horizontally centers the content.
+       - 'align-items: center;' vertically centers the content.
+       - 'height: 100vh;' makes the body take the full height of the viewport.
+       - 'margin: 0;' removes default margin around the body.
+       - 'background-color: hsl(212, 45%, 89%);' sets a light blue background color using HSL color values.
+       - 'font-family: 'Outfit', sans-serif;' sets the font family to 'Outfit' with a fallback to sans-serif.
+    */
+
+    .container {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      max-width: 300px;
+    }
+    /* The '.container' class styles the container holding the QR code and text.
+       - 'background-color: hsl(0, 0%, 100%);' sets a white background color.
+       - 'border-radius: 15px;' rounds the corners of the container.
+       - 'box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);' adds a subtle shadow for a 3D effect.
+       - 'text-align: center;' centers the text inside the container.
+       - 'padding: 20px;' adds space inside the container around the content.
+       - 'max-width: 300px;' limits the maximum width of the container to 300 pixels.
+    */
+
+    .qr-code img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    /* The '.qr-code img' selector styles the QR code image inside the container.
+       - 'width: 100%;' makes the image take up the full width of its parent container.
+       - 'border-radius: 10px;' rounds the corners of the image.
+    */
+
+    h1 {
+      font-size: 1.25rem;
+      color: hsl(218, 44%, 22%);
+      margin-top: 20px;
+    }
+    /* The 'h1' selector styles the main heading inside the container.
+       - 'font-size: 1.25rem;' sets the size of the text.
+       - 'color: hsl(218, 44%, 22%);' sets the text color to a dark blue.
+       - 'margin-top: 20px;' adds space above the heading.
+    */
+
+    p {
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+      margin-top: 10px;
+    }
+    /* The 'p' selector styles the paragraph text inside the container.
+       - 'font-size: 15px;' sets the size of the text.
+       - 'color: hsl(220, 15%, 55%);' sets the text color to a grayish blue.
+       - 'margin-top: 10px;' adds space above the paragraph.
+    */
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: hsl(220, 15%, 55%);
+      margin-top: 20px;
+    }
+    /* The '.attribution' class styles the attribution text at the bottom of the page.
+       - 'font-size: 11px;' sets the size of the text.
+       - 'text-align: center;' centers the text.
+       - 'color: hsl(220, 15%, 55%);' sets the text color to a grayish blue.
+       - 'margin-top: 20px;' adds space above the attribution.
+    */
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+    /* The '.attribution a' selector styles the links inside the attribution.
+       - 'color: hsl(228, 45%, 44%);' sets the link color to a bluish shade.
+       - 'text-decoration: none;' removes the underline from the links.
+    */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="qr-code">
+      <img src="images/image-qr-code.png" alt="QR Code">
+    </div>
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nelly</a>.
+  </div>
+</body>
+</html>
